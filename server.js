@@ -39,9 +39,9 @@ async function checkConnection() {
 // Call the function to check the connection
 checkConnection();
 
-//post
+//pos
 app.get("/products", async function (req, res) {
-  res.send({ name: "Fohren" });
+  res.send([{ name: "Fohren" }, { name: "Wäldaarlee" }]);
 });
 
 app.listen(3000, () => console.log("Example REST gestartet"));
